@@ -1,0 +1,18 @@
+
+Traceback (most recent call last):
+  File "/usr/bin/sugar-activity", line 5, in <module>
+    activityinstance.main()
+  File "/usr/lib/python2.7/dist-packages/sugar3/activity/activityinstance.py", line 230, in main
+    instance = create_activity_instance(activity_constructor, activity_handle)
+  File "/usr/lib/python2.7/dist-packages/sugar3/activity/activityinstance.py", line 59, in create_activity_instance
+    activity = constructor(handle)
+  File "/home/rod/Activities/Geogebra.activity/activity.py", line 15, in __init__
+    activity.Activity.__init__(self, handle)
+  File "/usr/lib/python2.7/dist-packages/sugar3/activity/activity.py", line 336, in __init__
+    ActivityTelemetry('start')
+  File "/usr/lib/python2.7/dist-packages/sugar3/telemetry.py", line 148, in __init__
+    os.environ['SUGAR_BUNDLE_VERSION'] + ' ' + text
+  File "/usr/lib/python2.7/dist-packages/sugar3/telemetry.py", line 98, in get_serial_number
+    except FileNotFoundError:
+NameError: global name 'FileNotFoundError' is not defined
+Exited with status 1, pid 23507 activity_id 753677bf1d3ef7f333e87e20637cb330ba06282c
